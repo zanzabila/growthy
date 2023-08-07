@@ -1,0 +1,1861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerkembanganActivity">
+
+    <TextView
+        android:id="@+id/tv_perkembangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Perkembangan"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_cekPerkembangan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_perkembangan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <!-- Tahapan Perkembangan -->
+
+            <TextView
+                android:id="@+id/tv_tahapanPerkembangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tahapan Perkembangan"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_0bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="0-3 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggerakkan kepala dari kiri/kanan ke tengah." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Melihat dan menatap wajah Anda." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengoceh spontan atau bereaksi dengan mengoceh. " />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Suka tertawa keras." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Beraksi terkejut terhadap suara keras. " />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Membalas tersenyum ketika diajak bicara/tersenyum." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengenal ibu dengan penglihatan penciuman, pendengaran, kontak." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_3bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="3-6 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berbalik dari telungkup ke terlentang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengangkat kepala setinggi 90 derajat." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mempertahankan posisi kepala tetap tegak dan stabil." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggenggam pensil." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Meraih benda yang ada dalam jangkauannya." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memegang tangannya sendiri." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berusaha  memperluas pandangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengarahkan matanya pada benda-benda kecil." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengeluarkan suara gembira bernada tinggi atau memekik." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Tersenyum ketika melihat mainan/gambar yang menarik saat bermain sendiri." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_6bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="6-9 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Duduk sikap tripoid sendiri." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Belajar berdiri, kedua kakinya menyangga sebagian berat badan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Merangkak meraih mainan atau mendekati seseorang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memindahkan benda dari tangan satu ke tangan yang lain." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memungut 2 benda, masing-masing lengan pegang 1 benda pada saat yang bersamaan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memungut benda sebesar kacang dengan cara meraup." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bersuara tanpa arti, mamama, bababa, dadada, tatata." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mencari mainan/benda yang dijatuhkan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bermain tepuk tangan/ciluk baa." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bergembira dengan melempar benda." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Makan kue sendiri." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_9bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="9-12 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengangkat benda ke posisi berdiri." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Dapat berjalan dengan dituntun." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengulurkan lengan/badan untuk meraih mainan yang diinginkan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggenggam erat pensil." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memasukkan benda ke mulut." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengulang menirukan bunyi yang didengarkan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengeksplorasi sekitar, ingin tau, ingin menyentuh apa saja." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Beraksi terhadap suara yang perlahan atau bisikan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Senang diajak bermain “ciluk baa”." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengenal anggota keluarga, takut pada orang yang belum dikenali." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_12bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="12-18 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berdiri sendiri tanpa berpegangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Membungkung memungut mainan kemudian berdiri kembali." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berjalan mundur 5 langkah." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memanggil ayah dengan kata “papa”. Memanggil ibu dengan kata “mama”." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menumpuk 2 kubus." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memasukkan kubus ke kotak." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menunjuk apa yang diinginkan tanpa menangis/merengek, anak bisa mengeluarkan suara yang menyenangkan atau menarik tangan ibu." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memperlihatkan rasa cemburu/bersaing." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_18bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="18-24 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berdiri sendiri tanpa berpegangan selama 30 detik." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berjalan tanpa terhuyung-huyung." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bertepuk tangan, melambai-lambai." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menumpuk 4 buah kubus." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memungut benda kecil dengan ibu jari dan jari telunjuk." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggelindingkan bola ke arah sasaran." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menyebut 3-6 kata yang mempunyai arti." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Membantu/menirukan pekerjaan rumah tangga." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Memegang cangkir sendiri, belajar makan-minum sendiri." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_24bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="24-36 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Jalan naik tangga sendiri." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Dapat bermain dengan sendal kecil." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mencoret-coret pensil pada kertas." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bicara dengan baik menggunakan 2 kata." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Dapat menunjukan 1 atau lebih bagian tubuhnya ketika diminta." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Melihat gambar dan dapat menyebut dengan benar nama 2 benda atau lebih." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Membantu memungut mainannya sendiri atau membantu mengangkat piring  jika diminta." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Makan nasi sendiri tanpa banyak tumpah." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Melepas pakaiannya sendiri." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_36bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="36-48 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Melompat kedua kaki diangkat." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengayuh sepeda roda tiga." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggambar garis lurus." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menumpuk 8 buah kubus." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengenal 2-4 warna." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menyebut nama, umur, tempat." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengerti arti kata di atas, di bawah, di depan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mendengarkan cerita" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mendengarkan cerita." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mencuci dan mengeringkan tangan sendiri." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengenakan celana panjang dan kemeja." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_48bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="48-60 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Melompat-lompat 1 kaki." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menari." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggambar tanda silang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggambar lingkaran." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggambar orang dengan 3 bagian tubuh." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengancing baju atau pakaian boneka." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menyebut nama lengkap tanpa dibantu." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Senang menyebut kata-kata baru." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Senang bertanya tentang sesuatu." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menjawab pertanyaan dengan kata-kata yang benar." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bicara mudah dimengerti." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bisa membandingkan/membedakan sesuatu dari ukuran dan bentuknya." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menyebut angka, menghitung jari." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menyebut nama-nama hari." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berpakaian sendiri tanpa dibantu." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bereaksi tenang dan tidak rewel ketika ditinggal ibu." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_60bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="60-72 Bulan"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berjalan lurus." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berdiri dengan 1 kaki selama 11 detik." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggambar dengan 6 bagian, menggambar orang lengkap." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menangkap bola kecil dengan kedua tangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menggambar segi emopt." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengerti arti lawan kata." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengerti pembicaraan yang menggunakan 7 kata atau lebih." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Menjawab pertanyaan tentang benda terbuat dari apa dan kegunaannya." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengenal angka, bisa menghitung angka 5-10." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengenal warna-warni." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengungkapkan simpati." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Mengikuti aturan permainan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berpakaian sendiri tanpa dibantu." />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <!-- Kelainan pada Perkembangan -->
+
+            <TextView
+                android:id="@+id/tv_kelainanPerkembangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Kelainan pada Perkembangan"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="1.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Gangguan bicara dan bahasa" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Kemampuan berbahasa merupakan indikator seluruh perkembangan anak. Karena kemampuan berbahasa sensitif terhadap keterlambatan atau kerusakan pada sistem lainnya, sebab melibatkan kemampuan kognitif, motor, psikologis, emosi dan lingkungan sekitar anak. Kurangnya stimulasi akan dapat menyebabkan gangguan bicara dan berbahasa bahkan gangguan ini dapat menetap." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="2.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Cerebral palsy" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Merupakan suatu kelainan gerakan dan postur tubuh yang tidak progresif, yang disebabkan oleh karena suatu kerusakan/gangguan pada sel-sel motorik pada susunan saraf pusat yang sedang tumbuh/belum selesai pertumbuhannya." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="3.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Sindrom down" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Anak dengan Sindrom Down adalah individu yang dapat dikenal dari fenotipnya dan mempunyai kecerdasan yang terbatas, yang terjadi akibat adanya jumlah kromosom 21 yang berlebih. Perkembangannya lebih lambat dari anak yang normal. Beberapa faktor seperti kelainan jantung kongenital, hipotonia yang berat, masalah biologis atau lingkungan lainnya dapat menyebabkan keterlambatan perkembangan motorik dan keterampilan untuk menolong diri sendiri." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="4.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Perawakan pendek" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Short stature atau Perawakan Pendek merupakan suatu terminologi mengenai tinggi badan yang berada di bawah persentil 3 atau -2 SD pada kurva pertumbuhan yang berlaku pada populasi tersebut. Penyebabnya dapat karena varisasi normal, gangguan gizi, kelainan kromosom, penyakit sistemik atau karena kelainan endokrin." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="5.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Gangguan autisme" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Merupakan gangguan perkembangan pervasif pada anak yang gejalanya muncul sebelum anak berumur 3 tahun. Pervasif berarti meliputi seluruh aspek perkembangan sehingga gangguan tersebut sangat luas dan berat, yang mempengaruhi anak secara mendalam. Gangguan perkembangan yang ditemukan pada autisme mencakup bidang interaksi sosial, komunikasi, dan perilaku." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="6.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Retardasi mental" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Merupakan suatu kondisi yang ditandai oleh intelegensi yang rendah (IQ kurang dari 70) yang menyebabkan ketidakmampuan individu untuk belajar dan beradaptasi terhadap tuntutan masyarakat atas kemampuan yang dianggap normal." />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="7.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Gangguan pemusatan perhatian dan hiperaktivitas (GPPH)" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Merupakan gangguan kesulitan untuk memusatkan perhatian yang seringkali disertai dengan hiperaktivas pada anak." />
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- Tes Perkembangan -->
+
+            <TextView
+                android:id="@+id/tv_jenisTesPerkembangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tes-Tes yang Harus Dilakukan"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="1.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Kuesioner Pra Skrining Perkembangan (KPSP)" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="2.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Tes Daya Dengar (TDD)" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="3.">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Tes Daya Lihat (TDL)" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cekPerkembangan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cek Perkembangan Anak"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekEmosionalKMPE">
+
+    <TextView
+        android:id="@+id/tv_tesKMPE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="KMPE"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tesKMPE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_kmpeQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering bereaksi negatif, marah atau tegang tanpa sebab yang jelas? (bereaksi negatif contohnya rewel, tidak sabara, banyak menangis, mudah tersinggung, atau bereaksi berlebihan bila merasa situasi tidak seperti yang diharapkannya atau kemauannya tidak terpenuhi)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ1Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ1Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda tampak lebih memilih untuk menyendiri atau bermain sendiri, atau menghindar dari anak seumurnya atau orang dewasa? (ingin sendirian, menyendiri dengan ekspresi murung, tidak bersemangat, sedih, atau kehilangan minat terhadap hal-hal yang biasa sangat dinikmati)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ2Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ2Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda cenderung bersikap menentang? (membantah, melawan, tidak mau menurut atau melakukan hal yang sebaliknya dari apa yang diminta, serta tampak tidak peduli ketika diberitahu atau ditegur)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ3Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ3Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda mudah takut atau cemas berlebihan tanpa sebab yang jelas? (misalnya takut pada binatang atau benda yang tidak berbahaya, terlihat cemas ketika tidak melihat ibu/pengasuhnya)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ4Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ4Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering sulit konsentrasi, perhatiannya mudah teralihkan atau banyak bergerak/tidak bisa diam? (misalnya Anda tidak bisa bertahan lama untuk bermain dengan satu permainan, mudah mengalihkan perhatian bila ada hal lain yang lebih menarik perhatian seperti bunyi atau gerakan, tidak bisa duduk dengan tenang, banyak bergerak atau cenderung berjalan/berlari mondar-mandir)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ5Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ5Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda lebih banyak menempel/selalu minta ditemani, mudah cemas dan tidak percaya diri? (seakan minta perlindungan atau minta ditemani pada berbagai situasi terutama ketika berada dalam situasi baru atau ada orang baru yang dikenalnya; mengekspresikan kecemasan serta tidak percaya diri)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ6Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ6Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda menunjukkan adanya perubahan pola tidur? (Seperti sulit tidur, terjaga sepanjang hari, sering terbangun di waktu malam oleh karena mimpi buruk, mengigau, menangis di dalam tidurnya)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ7Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ7Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda mengalami perubahan pola makan dari yang biasanya? (Kehilangan nafsu makan, tidak mau makan sama sekali, atau sebaliknya makan berlebihan, sangat memilih jenis makanan atau membiarkan makanan lama di mulut tanpa dikunyah atau diemut)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ8Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ8Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda seringkali mengeluh sakit kepala, sakit perut atau keluhan fisik lainnya dalam waktu waktu tertentu?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ9Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ9Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda mudah putus asa atau frustasi dan sering menunjukkan emosi yang negatif? (Seperti sedih atau kecewa yang berkepanjangan, mudah mengeluh, marah atau protes. Misal ketika anak merasa kesulitan dalam menggambar, lalu berteriak minta tolong, marah, atau kertasnya disobek)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ10Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ10Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda menunjukkan kemunduran pola perilaku dari kemampuan yang sudah dimilikinya?(seperti mengompol kembali, menghisap jempol, atau tidak mau berpisah dengan orang tua atau pengasuhnya)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ11Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ11Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering berkelahi, bertengkar, atau menyerang anak lain baik secara verbal maupun non verbal? (Seperti misalnya mengejek, meneriaki, merebut permainan, atau memukul temannya)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ12Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ12Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering diperlakukan tidak menyenangkan oleh anak lain atau orang dewasa? (Seperti misalnya ditinggal bermain, dihindari, diejek, dikata katakan, direbut mainannya atau disakiti secara fisik)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ13Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ13Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kmpeQ14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda cenderung berperilaku merusak atau cenderung selalu ingin menang atau menguasai. (Misalnya merusak benda, menyakiti dirinya, atau binatang)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kmpeQ14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ14Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kmpeQ14Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_alertKMPE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="TextView"
+                android:textColor="@color/red_alert" />
+
+            <Button
+                android:id="@+id/btn_kmpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Selanjutnya" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

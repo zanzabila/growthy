@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekPerkembanganP2b03Activity">
+
+    <TextView
+        android:id="@+id/tv_tesKPSP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Tes KPSP"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_kpspBulan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Untuk 3 bulan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tesKPSP1" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kpspBulan1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alatKPSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Alat yang dibutuhkan:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_alatKPSP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Wool merah"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Posisi bayi:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Terlentang"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_kpspQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada waktu bayi terlentang, apakah masing-masing lengan dan tungkai bergerak dengan mudah? Jawab TIDAK bila salah satu atau kedua tungkai atau lengan bayi bergerak tak terarah/tak terkendali."
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ1Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ1Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada waktu bayi telentang apakah ia melihat dan menatap wajah Anda?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ2Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ2Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah bayi dapat mengeluarkan suara-suara lain (ngoceh) selain menangis?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ23a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ3Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada waktu anda mengajak bayi berbicara dan tersenyum, apakah ia sosialisasi dan tersenyum kembali kepada Anda?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ4Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ4Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah bayi suka tertawa keras walau tidak digelitik atau diraba-raba?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ5Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ5Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan wool dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti gerakan Anda dengan menggerakkan kepalanya dari kanan/kiri ke tengah?"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_03" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ6Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ6Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan wool dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti Anda dengan menggerakkan kepalanya dari satu sisi hampir sampai pada sisi yang lain?"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_04" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ7Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ7Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Posisi bayi:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Telungkup"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_kpspQ8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya seperti pada gambar ini?"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_05" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ8Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ8Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya kepalanya sehingga membentuk sudut 45’ seperti pada gambar?"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_06" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ9Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ9Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpspQ10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada waktu bayi telungkup di atas yang datar, apakah ia dapat mengangkat kepalanya dengan tegak seperti pada gambar?"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_07" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpspQ10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ10Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpspQ10Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_alertKPSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="TextView"
+                android:textColor="@color/red_alert" />
+
+            <Button
+                android:id="@+id/btn_kpsp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Tes Selanjutnya" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

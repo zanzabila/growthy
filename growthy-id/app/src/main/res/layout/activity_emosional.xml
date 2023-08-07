@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmosionalActivity">
+
+    <TextView
+        android:id="@+id/tv_emosional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Emosional"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_cekEmosional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emosional">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_infoEmosional1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tes yang akan dilakukan:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_infoEmosional2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Kuesioner Masalah Perilaku dan Emosional (KMPE)"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Tujuan dilakukan tes ini adalah untuk mendeteksi adanya penyimpangan/masalah perilaku emosional pada anak" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Dilakukan setiap 6 bulan pada anak umur 36-72 bulan" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_infoEmosional3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Modified Checklist for Autism in Toddlers (M-CHAT)"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Tujuan dilakukan tes ini adalah mendeteksi secara dini adanya autis pada anak umur 18-36 bulan" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_infoEmosional4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Gangguan Pemusatan Perhatian dan Hiperaktivitas (GPHP)"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Tujuan dilakukan tes ini adalah untuk mengetahui adanya Gangguan Pemusatan Perhatian dan Hiperaktivitas (GPPH) pada anak umur 36 bulan ke atas" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_infoEmosional5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tujuan dari Deteksi Dini Penyimpangan Perilaku Emosional "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_infoEmosional6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Deteksi dini penyimpangan perilaku emosional adalah kegiatan atau pemeriksaan untuk menemukan secara dini adanya masalah perilaku emosional, autisme, dan gangguan pemusatan perhatian dan hiperaktivitas pada anak, agar dapat segera dilakukan tindakan intervensi. Bila penyimpangan perilaku emosional terlambat diketahui, maka intervensinya akan lebih sulit dan hal ini akan berpengaruh pada tumbuh kembang anak. "
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cekEmosional"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cek Emosional Anak"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

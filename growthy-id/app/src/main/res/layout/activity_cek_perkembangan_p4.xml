@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekPerkembanganP4">
+
+    <TextView
+        android:id="@+id/tv_tesTDL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Tes Daya Lihat"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tesTDL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tdl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:text="Yang dibutuhkan: Kartu E\n\nSilakan unduh kartu E dengan mengklik tombol di bawah. Kemudian cetak dengan kertas berukuran A4."
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/image_43" />
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:text="Unduh kartu E" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="1."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Pilih suatu ruangan yang bersih dan tenang, dengan penyinaran yang baik."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="2."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Gantungkan poster E setinggi mata anak pada posisi duduk."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="3."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Letakkan sebuah kursi sejauh 3 meter dari poster E menghadap ke poster E."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="4."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Letakkan sebuah kursi lainnya di samping poster E untuk pemeriksa."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="5."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Pemeriksa memberikan kartu E pada anak. Latih anak dalam mengarahkan kartu menghadap atas, bawah, kiri dan kanan; sesuai yang ditunjuk pada poster E oleh pemeriksa. Beri pujian setiap kali anak mau melakukannya. Lakukan hal ini sampai anak dapat mengarahkan kartu E dengan benar."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/image_42" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="6."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Selanjutnya, anak diminta menutup sebelah matanya dengan buku/kertas"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="7."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Dengan alat penunjuk, tunjuk huruf E pada poster, satu per satu, mulai baris pertama sampai baris ke-empat atau baris E terkecil yang masih dapat dilihat."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="8."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Puji anak setiap kali dapat mencocokkan posisi kartu E pada poster."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="9."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Ulangi pemeriksaan tersebut pada mata satunya dengan cara yang sama."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_column="1"
+                        android:paddingRight="10dp"
+                        android:text="10."
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="40dp"
+                        android:text="Isi baris E terkecil yang dapat terlihat."
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_mataKiri"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Mata kiri"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_mataKiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_mataKanan"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Mata kanan"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_mataKanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_alertTDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="TextView"
+                android:textColor="@color/red_alert" />
+
+            <Button
+                android:id="@+id/btn_tdl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Lihat hasil tes" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

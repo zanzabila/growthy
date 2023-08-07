@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekEmosionalMCHAT">
+
+    <TextView
+        android:id="@+id/tv_tesMCHAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="M-CHAT"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tesMCHAT">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mchatQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda senang diayun, melambung di lutut Anda dan sebagainya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ1Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ1Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda senang/tertarik dengan anak-anak lain?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ2Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ2Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda senang memanjat seperti tangga?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ3Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ3Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda senang bermain cilukba/petak umpet?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ4Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ4Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering bermain pura-pura, contohnya; berbicara di telepon atau bermain dengan boneka atau bermain pura-pura yang lain?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ5Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ5Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering menunjuk dengan jarinya untuk bermain sesuatu?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ6Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ6Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering menunjuk dengan jarinya untuk mengindikasikan ia tertarik sesuatu?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ7Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ7Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Dapatkah anak Anda bermain pantas dengan mainan kecil (seperti mobil atau benda kecil) tanpa memasukkan ke dalam mulut, mengunyah, atau menjatuhkannya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ8Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ8Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering membawa benda di depan orang tua untuk menunjukan Anda sesuatu?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ9Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ9Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda melihat mata Anda lebih dari satu atau dua detik?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ10Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ10Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda sering terlihat sensitif yang berlebihan terhadap suara berisik? (seperti menutup telinga)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ11Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ11Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda tersenyum sebagai respon terhadap wajah baru atau senyum Anda?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ12Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ12Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda meniru perilaku Anda? (misal ketika Anda membuat ekspresi wajah), apakah anak Anda meniru Anda?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ13Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ13Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda merespon ketika namanya dipanggil?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ14Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ14Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Jika Anda menunjuk mainan yang ada di ruangan, apakah anak Anda melihatnya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ15Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ15Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda berjalan?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ16Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ16Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda melihat benda yang Anda lihat?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ17Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ17Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda membuat gerakan jari yang tidak biasanya dekat wajahnya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ18Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ18Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda berusaha menarik perhatian Anda terhadap aktivitasnya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ19Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ19Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah Anda sering khawatir apabila anak Anda tuli?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ20Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ20Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda mengerti apa yang dikatakan orang lain?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ21Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ21Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda kadang-kadang memandang untuk hal yang tidak jelas atau mondar-mandir tanpa tujuan?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ22Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ22Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_mchatQ23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak Anda melihat wajah Anda untuk melihat reaksi ketika bertemu sesuatu yang tidak dikenal?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_mchatQ23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ23Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_mchatQ23Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_alertMCHAT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="TextView"
+                android:textColor="@color/red_alert" />
+
+            <Button
+                android:id="@+id/btn_mchat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Selanjutnya" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

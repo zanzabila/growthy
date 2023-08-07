@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:id="@+id/tv_about1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tentang Kami"
+                android:textSize="34sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/tv_about2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Growthy merupakan aplikasi yang ditujukan untuk memantau pertumbuhan, perkembangan, dan emosional anak. Aplikasi ini dikhususkan untuk anak sejak dilahirkan sampai berusia 72 bulan."
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:id="@+id/tv_about3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developer:\n・Rayhan Zanzabila\n・Laura Imanuela Mustamu\n・Rania Az Zahra"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/tv_about4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dengan bimbingan\n・Wikky Fawwaz Al Maki"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

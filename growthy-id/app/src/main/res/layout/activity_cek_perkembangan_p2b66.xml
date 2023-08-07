@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekPerkembanganP2b66Activity">
+
+    <TextView
+        android:id="@+id/tv_kpspBulan15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Untuk 66 bulan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tesKPSP15" />
+
+    <TextView
+        android:id="@+id/tv_tesKPSP15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Tes KPSP"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_kpspBulan15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alatKPSP50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Alat yang dibutuhkan:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_alatKPSP51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Kertas gambar"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_alatKPSP52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Kertas warna-warni (merah, kuning, hijau, dan biru)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_alatKPSP53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Pensil"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_alatKPSP54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Bola sebesar bola tenis atau bola kasti"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view31"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Posisi anak:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Duduk sendiri"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Jangan membantu anak dan jangan memberitahu nama gambar ini, suruh anak menggambar seperti contoh ini di kertas kosong yang tersedia. Berikan 3 kali kesempatan. Apakah anak dapat menggambar seperti contoh ini?"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_35" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Jawab YA jika anak menggambar seperti ini:"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_36" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Jawab TIDAK jika anak menggambar seperti ini:"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_37" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q1Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q1Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Susun kertas warna-warni seperti contoh di bawah. Jangan menunjuk, membantu atau membetulkan, katakan pada anak:\n・'Tunjukan segi empat merah'\n・'Tunjukan segi empat kuning'\n・'Tunjukan segi empat biru'\n・'Tunjukan segi empat hijau'"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image_38" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Dapatkah anak menunjuk keempat warna itu dengan benar?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q2Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q2Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Suruh anak menggambar di tempat kosong yang tersedia. Katakan padanya “buatlah gambar orang”. Jangan memberi perintah lebih dari itu. Jangan bertanya atau mengingatkan anak bila ada bagian yang belum tergambar. Dalam memberi nilai, hitunglah berapa bagian tubuh yang tergambar. Untuk bagian tubuh yang berpasangan seperti mata, telinga, lengan dan kaki, setiap pasang dinilai 1 bagian. Dapatkah anak menggambar sedikitnya 3 bagian tubuh?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q3Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q3Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pada gambar orang yang dibuat pada poin 3, dapatkah anak menggambar sedikitnya 6 bagian tubuh?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q4Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q4Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Tanyakan kepada anak 3 pertanyaan berikut:\n・'Jika kuda besar, maka tikus...'\n・'Jika api panas, maka es...'\n・'Jika ibu seorang wanita, maka ayah seorang...'"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q5_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak dapat menjawab dengan benar? (Tikus kecil; es dingin; ayah pria)"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q5Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q5Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak bereaksi dengan tenang dan tidak rewel (tanpa menangis atau menggelayut pada Anda) pada saat Anda meninggalkannya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q6Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q6Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Dapatkah anak sepenuhnya berpakaian sendiri tanpa bantuan?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q7Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q7Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view32"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPSP55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Posisi anak:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_posisiKPS56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Berdiri"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Suruh anak melompat dengan satu kaki beberapa kali tanpa berpegangan (lompatan dengan dua kaki tidak ikut dinilai). Apakah ia dapat melompat 2-3 kali dengan satu kaki?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q8Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q8Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Ikuti perintah ini dengan saksama. Jangan memberi isyarat dengan telunjuk atau mata pada saat memberikan perintah berikut ini:\n・'Letakkan kertas ini di atas lantai'\n・'Letakkan kertas ini di bawah kursi'\n・'Letakkan kertas ini di depan kamu'\n・'Letakkan kertas ini di belakang kamu'"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q9_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Jawab YA hanya jika anak mengerti arti 'di atas', di bawah', di depan', dan 'di belakang'."
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q9Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q9Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_kpsp15Q10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apakah anak dapat menangkap bola kecil sebesar bola tenis/bola kasti hanya dengan menggunakan kedua tangannya?"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_kpsp15Q10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q10Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40sp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/btn_kpsp15Q10Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_alertKPSP15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="TextView"
+                android:textColor="@color/red_alert" />
+
+            <Button
+                android:id="@+id/btn_kpsp15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Tes Selanjutnya" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Assignments/Tingkat 3/Informatika untuk Masyarakat/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_about.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_emosional_gpph.xml" value="0.2503556187766714" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_emosional_kmpe.xml" value="0.2086544161232958" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_emosional_mchat.xml" value="0.29517819706498954" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_emosional_umur.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p1.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2.xml" value="0.2953020134228188" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2_b54.xml" value="0.2584558823529412" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2_b60.xml" value="0.22772918691286037" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b03.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b06.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b09.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b12.xml" value="0.3161203412662775" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b15.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b18.xml" value="0.3502487562189055" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b21.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b24.xml" value="0.3074235807860262" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b3.xml" value="0.23624161073825503" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b30.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b36.xml" value="0.29780033840947545" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b42.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b48.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b54.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b6.xml" value="0.24393624393624394" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b60.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b66.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b72.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2b9.xml" value="0.24159231297185998" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan00_sampai03.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan03_sampai06.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan06_sampai12.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan12_sampai18.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan18_sampai24.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan24_sampai30.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan30_sampai36.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p3_bulan36.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_perkembangan_p4.xml" value="0.25" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_pertumbuhan_p1.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_cek_pertumbuhan_p2.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_emosional.xml" value="0.33" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_hasil_tes_emosional1.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_hasil_tes_emosional2.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_hasil_tes_emosional3.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_hasil_tes_perkembangan_tanpa_tdl.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_hasil_tes_perkembangan_tdl.xml" value="0.35260416666666666" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_hasil_tes_pertumbuhan.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_kpsp.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_perkembangan.xml" value="0.19072164948453607" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/layout/activity_pertumbuhan.xml" value="0.2850770478507705" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_foreground.xml" value="1.0" />
+        <entry key="..\:/InformatikaUntukMasyarakat/IuM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/drawable/bullet.xml" value="0.2703125" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/drawable/circle.xml" value="0.2703125" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_cek_perkembangan_p1.xml" value="0.2269021739130435" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_cek_perkembangan_p2.xml" value="0.2269021739130435" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_cek_pertumbuhan_p1.xml" value="0.264" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_cek_pertumbuhan_p2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_emosional.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_perkembangan.xml" value="0.30659767141009053" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/layout/activity_pertumbuhan.xml" value="0.13352112676056338" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Programs/AndroidStudio/IuM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

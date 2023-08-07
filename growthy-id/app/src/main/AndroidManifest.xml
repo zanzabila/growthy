@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tumbuhdankembang">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TumbuhDanKembang">
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HasilTesEmosional3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HasilTesEmosional2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HasilTesEmosional1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekEmosionalGPPH"
+            android:exported="false" />
+        <activity
+            android:name=".CekEmosionalMCHAT"
+            android:exported="false" />
+        <activity
+            android:name=".CekEmosionalKMPE"
+            android:exported="false" />
+        <activity
+            android:name=".CekEmosionalUmur"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP4"
+            android:exported="false" />
+        <activity
+            android:name=".HasilTesPerkembanganTDLActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HasilTesPerkembanganTanpaTDLActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan36"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b72Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b66Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b60Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b54Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b48Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b42Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan30Sampai36"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan24Sampai30"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan18Sampai24"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan12Sampai18"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan06Sampai12"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan03Sampai06"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP3Bulan00Sampai03"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b36Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b30Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b24Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b21Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b18Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b15Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b12Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b09Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b06Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP2b03Activity"
+            android:exported="true" />
+        <activity
+            android:name=".HasilTesPertumbuhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CekPerkembanganP1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".CekPertumbuhanP2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".CekPertumbuhanP1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".EmosionalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PerkembanganActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PertumbuhanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

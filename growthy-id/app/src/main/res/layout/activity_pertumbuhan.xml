@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PertumbuhanActivity">
+
+    <TextView
+        android:id="@+id/tv_pertumbuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Pertumbuhan"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cekPertumbuhan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cek Pertumbuhan Anak"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_cekPertumbuhan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pertumbuhan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_caraUkurPertumbuhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Cara Mengukur"
+                android:textSize="20sp" />
+
+            <!-- Berat Badan -->
+
+            <TextView
+                android:id="@+id/tv_BB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Penimbangan Berat Badan"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_BB_bayi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Menggunakan Timbangan Bayi" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Timbangan bayi digunakan untuk menimbang anak sampai umur 2 tahun atau selama anak masih bisa berbaring/duduk tenang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Letakkan timbangan pada meja yang datar dan tidak mudah bergoyang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Lihat posisi jarum atau angka harus menunjuk ke angka 0." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bayi sebaiknya telanjang, tanpa topi, kaus kaki, ataupun sarung tangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Baringkan bayi dengan hati-hati di atas timbangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Lihat jarum timbangan sampai berhenti." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Baca angka yang ditunjukan oleh jarum timbangan atau angka timbangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bila bayi terus menerus bergerak, perhatikan gerakan jarum, baca angka di tengah-tengah antara gerakan jarum ke kanan dan ke kiri." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_BB_dacin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Menggunakan Timbangan Dacin" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Pastikan dacin masih layak digunakan, periksa dan letakan banul geser pada angka nol. Jika ujung kedua paku dacin tidak dalam posisi lurus, maka timbangan tidak layak digunakan dan harus dikalibrasi." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Masukan balita ke dalam sarung timbang dengan pakaian seminimal mungkin dan geser bandul sampai jarum tegak lurus." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Baca berat badan balita dengan melihat angka di ujung bandul geser." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Catat hasil penimbangan dengan benar." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Kembalikan bandul ke angka nol dan keluarkan Balita dari sarung timbang." />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_BB_injak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Menggunakan Timbangan Injak (Timbangan Digital)" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Letakkan timbangan di lantai yang datar sehingga tidak mudah bergerak." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Lihat posisi jarum atau angka harus menunjuk ke angka 0." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Anak sebaiknya memakai baju sehari-hari yang tipis, tidak memakai alas kaki, jaket, topi, jam tangan, kalung, dan tidak memegang sesuatu." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Anak berdiri di atas timbangan tanpa dipegangi." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Lihat jarum timbangan sampai berhenti." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Baca angka yang ditunjuk oleh jarum timbangan atau angka timbangan." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bila anak terus menerus bergerak, perhatikan gerakan jarum, baca angka di tengah-tengah antara gerakan jarum ke kanan dan ke kiri." />
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- Tinggi Badan-->
+
+            <TextView
+                android:id="@+id/tv_TB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Penimbangan Panjang dan Tinggi Badan"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_TB_baring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Untuk Bayi 0-24 Bulan" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Sebaiknya dilakukan oleh 2 orang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Bayi dibaringkan telentang pada pembatas angka." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Orang ke-1: kedua tangan memegang kepala bayi agar tetap menempel pada pembatas angka 0 (pembatas kepala)." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Orang ke-2: tangan kiri menekan lutut bayi agar lurus, tangan kanan menekan batas kaki ke telapak kaki." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Orang ke-2 membaca angka di tepi pengukur." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Jika anak umur 0-24 bulan diukur berdiri, maka hasil pengukurannya dikoreksi dengan menambahkan 0,7 cm." />
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/image_01" />
+
+            <TextView
+                android:id="@+id/tv_TB_berdiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Untuk Anak 24-72 Bulan" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Anak tidak memakai sandal atau sepatu." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Berdiri tegak menghadap ke depan" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Punggung, pantat, dan tumit menempel pada tiang pengukur." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Turunkan batas atas pengukur sampai menempel di ubun-ubun." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Baca angka pada batas tersebut." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Jika anak umur di atas 24 bulan diukur telentang, maka hasil pengukurannya dikoreksi dengan mengurangkan 0,7 cm." />
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/image_02" />
+
+            <!-- Lingkar Kepala -->
+
+            <TextView
+                android:id="@+id/tv_LK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pengukuran Lingkar Kepala"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_LK0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Untuk Umur 0-11 Bulan\n・Pengukuran dilakukan setiap tiga bulan." />
+
+            <TextView
+                android:id="@+id/tv_LK12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:text="Untuk Umur 12-72 Bulan\n・Pengukuran dilakukan setiap enam bulan." />
+
+            <TextView
+                android:id="@+id/tv_LK12_caraUkur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="4dp"
+                android:text="Cara mengukur:" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Alat pengukur dilingkarkan pada kepala anak melewati dahi, di atas alis mata, di atas kedua telinga, dan bagian belakang kepala yang menonjol, tarik agak kencang." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="・">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:paddingEnd="15dp"
+                        android:text="Baca angka pada pertemuan ujung alat pengukur." />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

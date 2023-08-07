@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginStart="32sp"
+            android:layout_marginEnd="32sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="314dp"
+                android:layout_height="116dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/growthy_text" />
+
+            <Button
+                android:id="@+id/btn_pertumbuhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:layout_marginBottom="2sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Pertumbuhan"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_perkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:layout_marginBottom="2sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Perkembangan"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_emosional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:layout_marginBottom="2sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Emosional"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:layout_marginBottom="4sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Tentang kami"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
