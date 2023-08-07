@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnPertumbuhan: Button
     private lateinit var btnPerkembangan: Button
     private lateinit var btnEmosional: Button
+    private lateinit var btnArsip: Button
     private lateinit var btnAbout: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         btnPertumbuhan = findViewById(R.id.btn_pertumbuhan)
         btnPerkembangan = findViewById(R.id.btn_perkembangan)
         btnEmosional = findViewById(R.id.btn_emosional)
+        btnArsip = findViewById(R.id.btn_arsip)
         btnAbout = findViewById(R.id.btn_about)
 
         btnPertumbuhan.setOnClickListener {
@@ -33,6 +35,11 @@ class MainActivity : AppCompatActivity() {
 
         btnEmosional.setOnClickListener {
             val intent = Intent(this, EmosionalActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnArsip.setOnClickListener {
+            val intent = Intent(this, ArsipActivity::class.java)
             startActivity(intent)
         }
 

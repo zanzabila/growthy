@@ -21,6 +21,9 @@ class CekPerkembanganP3Bulan06Sampai12 : AppCompatActivity() {
         setContentView(R.layout.activity_cek_perkembangan_p3_bulan06_sampai12)
 
         var hasilKPSP = intent.getStringExtra("hasilKPSP")
+        val nama = intent.getStringExtra("nama")
+        val tglLahir = intent.getStringExtra("tglLahir")
+        val tglHariIni = intent.getStringExtra("tglHariIni")
         radio01 = findViewById(R.id.radio_tdd3Q1)
         radio02 = findViewById(R.id.radio_tdd3Q2)
         radio03 = findViewById(R.id.radio_tdd3Q3)
@@ -43,9 +46,20 @@ class CekPerkembanganP3Bulan06Sampai12 : AppCompatActivity() {
                 if (selected03.getText().toString().equals("Tidak")) hasilTDD = "penyimpangan"
 
                 // tidak perlu TDL; langsung ke hasil tes
+                val kasar = intent.getIntExtra("kasar", 0)
+                val halus = intent.getIntExtra("halus", 0)
+                val bicara = intent.getIntExtra("bicara", 0)
+                val sosialisasi = intent.getIntExtra("sosialisasi", 0)
                 val intent = Intent(this, HasilTesPerkembanganTanpaTDLActivity::class.java)
                 intent.putExtra("hasilKPSP", hasilKPSP)
                 intent.putExtra("hasilTDD", hasilTDD)
+                intent.putExtra("kasar", kasar)
+                intent.putExtra("halus", halus)
+                intent.putExtra("bicara", bicara)
+                intent.putExtra("sosialisasi", sosialisasi)
+                intent.putExtra("nama", nama)
+                intent.putExtra("tglLahir", tglLahir)
+                intent.putExtra("tglHariIni", tglHariIni)
                 startActivity(intent)
 
             } else {

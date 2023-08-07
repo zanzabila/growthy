@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:text="Untuk 24-30 bulan bulan"
+        android:text="Untuk 24-30 bulan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tesTDD6" />
 
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Apakah anak mulai menggunakan kata kata lain, selain kata mama, papa, anggota keluarga lain dan hewan peliharaan?\n\nApakah anak mulai mengungkapkan kata yang berarti 'milik' misal 'susu kamu' atau 'bonekaku'?\n"
+                android:text="Apakah anak mulai menggunakan kata-kata lain, selain kata mama, papa, anggota keluarga lain, dan hewan peliharaan?\n\nApakah anak mulai mengungkapkan kata yang berarti 'milik' misal 'susu kamu' atau 'bonekaku'?\n"
                 android:textSize="20sp" />
 
             <RadioGroup

@@ -8,14 +8,16 @@
 
     <TextView
         android:id="@+id/tv_tesPerkembangan1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="Tes Perkembangan"
         android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Tes Perkembangan" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -35,10 +37,35 @@
 
 
             <TextView
+                android:id="@+id/tv_namaPerkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Nama anak"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/et_namaPerkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Nama anak"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tv_emptyAlertNamaPerkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/red_alert"
+                android:textSize="16sp" />
+
+            <TextView
                 android:id="@+id/tv_tglLahirPerkembangan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="24dp"
                 android:text="Tanggal lahir anak"
                 android:textSize="24sp" />
 
@@ -126,6 +153,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="@color/red_alert"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_perkembangan1"
         app:layout_constraintEnd_toEndOf="parent"

@@ -2,14 +2,10 @@ package com.example.tumbuhdankembang
 
 import android.app.DatePickerDialog
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.DatePicker
-import android.widget.ImageButton
-import android.widget.TextView
+import android.widget.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -23,7 +19,10 @@ class CekEmosionalUmur : AppCompatActivity() {
     private lateinit var btnEmosional: Button
     var tvInvalidDate: TextView? = null
     var tvEmptyAlertUsia: TextView? = null
-    var tvLebih72: TextView? = null
+    var tvTidakTes: TextView? = null
+    var etNama: EditText? = null
+    var tvEmptyAlertNama: TextView? = null
+    val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.US)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,10 +34,13 @@ class CekEmosionalUmur : AppCompatActivity() {
         btnEmosional = findViewById(R.id.btn_emosional1)
         tvInvalidDate = findViewById(R.id.tv_invalidTglLahirEmosional)
         tvEmptyAlertUsia = findViewById(R.id.tv_emptyAlertUsiaHamilEmosional)
-        tvLebih72 = findViewById(R.id.tv_invalidUsiaEmosional)
+        tvTidakTes = findViewById(R.id.tv_invalidUsiaEmosional)
+        etNama = findViewById(R.id.et_namaEmosional)
+        tvEmptyAlertNama = findViewById(R.id.tv_emptyAlertNamaEmosional)
 
+        tvEmptyAlertNama!!.text = ""
         tvEmptyAlertUsia!!.text = ""
-        tvLebih72!!.text = ""
+        tvTidakTes!!.text = ""
         this.updateDateInView()
 
         val dateSetListener = object : DatePickerDialog.OnDateSetListener {
@@ -61,32 +63,48 @@ class CekEmosionalUmur : AppCompatActivity() {
         })
 
         btnEmosional.setOnClickListener {
-            tvLebih72!!.text = ""
-            if (etUsiaHamil.text.toString().length > 0) {
+            tvTidakTes!!.text = ""
+
+            if (etUsiaHamil.text.toString().length > 0) tvEmptyAlertUsia!!.text = ""
+            else tvEmptyAlertUsia!!.text = "Mohon lengkapi isian usia kehamilan."
+
+            if (etNama!!.text.toString().length > 0) tvEmptyAlertNama!!.text = ""
+            else tvEmptyAlertNama!!.text = "Mohon lengkapi isian nama anak."
+
+            if (etUsiaHamil.text.toString().length>0 && etNama!!.text.toString().length>0) {
                 tvEmptyAlertUsia!!.text = ""
                 if (!cal.after(today)) {
                     var umur = getUmur(etUsiaHamil.text.toString().toInt())
+                    var nama = (etNama!!.text.toString()).lowercase()
+                    nama = nama.split(" ").joinToString(" ") { it.replaceFirstChar {
+                        if (it.isLowerCase()) it.titlecase(
+                            Locale.getDefault()
+                        ) else it.toString()
+                    } }.trimEnd()
+                    val tglLahir = tvIsiTglLahir!!.text
+                    val tglHariIni = sdf.format(today.getTime())
 
                     if (umur < 18) {
-                        tvEmptyAlertUsia!!.setTextColor(Color.parseColor("#000000"))
-                        tvEmptyAlertUsia!!.text = "Anak belum perlu melakukan tes emosional.\nSilakan kembali ke halaman sebelumnya."
-                    } else if (umur <= 36) {
+                        tvTidakTes!!.text = "Anak belum perlu melakukan tes emosional.\nSilakan kembali ke halaman sebelumnya."
+                    } else if (umur < 42) {
                         tvEmptyAlertUsia!!.text = ""
                         val intent = Intent(this, CekEmosionalMCHAT::class.java)
                         intent.putExtra("umur", umur)
+                        intent.putExtra("nama", nama)
+                        intent.putExtra("tglLahir", tglLahir)
+                        intent.putExtra("tglHariIni", tglHariIni)
                         startActivity(intent)
                     } else if (umur<=72) {
                         val intent = Intent(this, CekEmosionalKMPE::class.java)
                         intent.putExtra("umur", umur)
+                        intent.putExtra("nama", nama)
+                        intent.putExtra("tglLahir", tglLahir)
+                        intent.putExtra("tglHariIni", tglHariIni)
                         startActivity(intent)
                     } else {
-                        tvLebih72!!.text = "Mohon maaf, tes perkembangan hanya dapat dilakukan untuk anak berumur 72 bulan ke bawah."
+                        tvTidakTes!!.text = "Mohon maaf, tes mental emosional hanya dapat dilakukan untuk anak berumur 72 bulan ke bawah."
                     }
-
                 }
-            } else {
-                tvEmptyAlertUsia!!.setTextColor(Color.parseColor("#D0342C"))
-                tvEmptyAlertUsia!!.text = "Mohon lengkapi isian usia kehamilan."
             }
         }
     }
@@ -101,12 +119,21 @@ class CekEmosionalUmur : AppCompatActivity() {
             c.add(Calendar.MONTH, 1)
             ++count
         }
-        if (count<0) return 0
+        if (count==0) return 0
+        if (count==73) {
+            c.add(Calendar.MONTH, -1)
+            var days = 0
+            while (c.before(today)) {
+                c.add(Calendar.DAY_OF_MONTH, 1)
+                ++days
+            }
+            if (days<30) return 72
+            else return 73
+        }
         return count-1
     }
 
     private fun updateDateInView() {
-        val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.US)
         tvIsiTglLahir!!.text = sdf.format(cal.getTime())
         if (cal.after(today)) {
             tvInvalidDate!!.text = "Mohon masukkan tanggal lahir yang valid."

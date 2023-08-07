@@ -120,7 +120,7 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="40dp"
-                        android:text="Letakkan sebuah kursi sejauh 3 meter dari poster E menghadap ke poster E."
+                        android:text="Letakkan sebuah kursi sejauh 3 meter dari poster E dan menghadap ke poster E."
                         android:textSize="20sp" />
 
                 </TableRow>
@@ -192,7 +192,7 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="40dp"
-                        android:text="Selanjutnya, anak diminta menutup sebelah matanya dengan buku/kertas"
+                        android:text="Selanjutnya, anak diminta menutup sebelah matanya dengan buku/kertas."
                         android:textSize="20sp" />
 
                 </TableRow>
@@ -211,7 +211,7 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="40dp"
-                        android:text="Dengan alat penunjuk, tunjuk huruf E pada poster, satu per satu, mulai baris pertama sampai baris ke-empat atau baris E terkecil yang masih dapat dilihat."
+                        android:text="Dengan alat penunjuk, tunjuk huruf E pada poster satu per satu, dimulai dari baris pertama sampai baris ke-empat atau baris E terkecil yang masih dapat dilihat."
                         android:textSize="20sp" />
 
                 </TableRow>
@@ -268,94 +268,183 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="40dp"
-                        android:text="Isi baris E terkecil yang dapat terlihat."
+                        android:text="Berikan tanda centang pada baris yang dapat dilihat oleh anak."
                         android:textSize="20sp" />
 
                 </TableRow>
 
             </TableLayout>
 
-            <LinearLayout
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:stretchColumns="*">
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_barisKe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Baris ke-"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/tv_mataKiri"
-                        android:layout_width="120dp"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_column="1"
+                        android:layout_weight="1"
                         android:text="Mata kiri"
                         android:textAlignment="center"
                         android:textSize="20sp" />
 
-                    <EditText
-                        android:id="@+id/et_mataKiri"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="number"
-                        android:textAlignment="center"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/tv_mataKanan"
-                        android:layout_width="120dp"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_column="2"
+                        android:layout_weight="1"
                         android:text="Mata kanan"
                         android:textAlignment="center"
                         android:textSize="20sp" />
+                </TableRow>
 
-                    <EditText
-                        android:id="@+id/et_mataKanan"
-                        android:layout_width="match_parent"
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_barisKe1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="number"
+                        android:layout_column="0"
+                        android:text="1"
                         android:textAlignment="center"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
+                        android:textSize="20sp" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-            </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/check_kiri1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
 
-            <TextView
-                android:id="@+id/tv_alertTDL"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="TextView"
-                android:textColor="@color/red_alert" />
+                    <CheckBox
+                        android:id="@+id/check_kanan1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_barisKe2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_kiri2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+
+                    <CheckBox
+                        android:id="@+id/check_kanan2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_barisKe3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_kiri3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+
+                    <CheckBox
+                        android:id="@+id/check_kanan3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_barisKe4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_kiri4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+
+                    <CheckBox
+                        android:id="@+id/check_kanan4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center_horizontal"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp" />
+                </TableRow>
+
+            </TableLayout>
 
             <Button
                 android:id="@+id/btn_tdl"

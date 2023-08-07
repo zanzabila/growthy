@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="4dp"
-                android:text="Susun kertas warna-warni seperti contoh di bawah. Jangan menunjuk, membantu atau membetulkan, katakan pada anak:\n・'Tunjukan segi empat merah'\n・'Tunjukan segi empat kuning'\n・'Tunjukan segi empat biru'\n・'Tunjukan segi empat hijau'"
+                android:text="Susun kertas warna-warni seperti contoh di bawah. Jangan menunjuk, membantu atau membetulkan, katakan pada anak:\n・'Tunjukkan segi empat merah'\n・'Tunjukkan segi empat kuning'\n・'Tunjukkan segi empat biru'\n・'Tunjukkan segi empat hijau'"
                 android:textSize="20sp" />
 
             <ImageView

@@ -8,12 +8,14 @@
 
     <TextView
         android:id="@+id/tv_emosional"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Emosional"
+        android:layout_marginEnd="32dp"
+        android:text="Mental Emosional"
         android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

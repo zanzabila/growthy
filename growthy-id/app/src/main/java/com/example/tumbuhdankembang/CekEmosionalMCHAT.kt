@@ -41,6 +41,9 @@ class CekEmosionalMCHAT : AppCompatActivity() {
         setContentView(R.layout.activity_cek_emosional_mchat)
 
         var umur = intent.getIntExtra("umur", 0)
+        val nama = intent.getStringExtra("nama")
+        val tglLahir = intent.getStringExtra("tglLahir")
+        val tglHariIni = intent.getStringExtra("tglHariIni")
         radio01 = findViewById(R.id.radio_mchatQ1)
         radio02 = findViewById(R.id.radio_mchatQ2)
         radio03 = findViewById(R.id.radio_mchatQ3)
@@ -154,11 +157,17 @@ class CekEmosionalMCHAT : AppCompatActivity() {
                     val intent = Intent(this, HasilTesEmosional1Activity::class.java)
                     intent.putExtra("hasilMCHAT", hasilMCHAT)
                     intent.putExtra("umur", umur)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 } else {
                     val intent = Intent(this, CekEmosionalKMPE::class.java)
                     intent.putExtra("hasilMCHAT", hasilMCHAT)
                     intent.putExtra("umur", umur)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 }
 

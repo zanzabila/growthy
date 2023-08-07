@@ -6,78 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <Space
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|center_vertical"
-            android:layout_marginStart="32sp"
-            android:layout_marginEnd="32sp"
-            android:orientation="vertical">
+            android:layout_weight="3" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="314dp"
-                android:layout_height="116dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="64dp"
-                android:layout_marginBottom="32dp"
-                android:contentDescription="@null"
-                app:srcCompat="@drawable/growthy_text" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="314dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/growthy_text_nobg" />
 
-            <Button
-                android:id="@+id/btn_pertumbuhan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="2sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="Pertumbuhan"
-                android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_pertumbuhan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Pertumbuhan"
+            android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/btn_perkembangan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2sp"
-                android:layout_marginBottom="2sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="Perkembangan"
-                android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_perkembangan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Perkembangan"
+            android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/btn_emosional"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2sp"
-                android:layout_marginBottom="2sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="Emosional"
-                android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_emosional"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Mental Emosional"
+            android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/btn_about"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2sp"
-                android:layout_marginBottom="4sp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="Tentang kami"
-                android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_arsip"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Arsip Hasil Tes"
+            android:textSize="20sp" />
 
-        </LinearLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Tentang Growthy"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

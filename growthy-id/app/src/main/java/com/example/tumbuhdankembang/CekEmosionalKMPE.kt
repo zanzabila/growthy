@@ -32,6 +32,9 @@ class CekEmosionalKMPE : AppCompatActivity() {
         setContentView(R.layout.activity_cek_emosional_kmpe)
 
         var umur = intent.getIntExtra("umur", 0)
+        val nama = intent.getStringExtra("nama")
+        val tglLahir = intent.getStringExtra("tglLahir")
+        val tglHariIni = intent.getStringExtra("tglHariIni")
         radio01 = findViewById(R.id.radio_kmpeQ1)
         radio02 = findViewById(R.id.radio_kmpeQ2)
         radio03 = findViewById(R.id.radio_kmpeQ3)
@@ -106,17 +109,23 @@ class CekEmosionalKMPE : AppCompatActivity() {
                     hasilKMPE = "terindikasi berat"
                 }
 
-                if (umur == 36) {
+                if (umur<42) {
                     var hasilMCHAT = intent.getStringExtra("hasilMCHAT")
                     val intent = Intent(this, CekEmosionalGPPH::class.java)
                     intent.putExtra("hasilMCHAT", hasilMCHAT)
                     intent.putExtra("hasilKMPE", hasilKMPE)
                     intent.putExtra("umur", umur)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 } else {
                     val intent = Intent(this, CekEmosionalGPPH::class.java)
                     intent.putExtra("hasilKMPE", hasilKMPE)
                     intent.putExtra("umur", umur)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 }
 

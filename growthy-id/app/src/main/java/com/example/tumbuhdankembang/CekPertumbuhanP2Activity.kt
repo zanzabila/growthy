@@ -27,6 +27,9 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
 
         var jk = intent.getStringExtra("jk")
         var umur = intent.getIntExtra("umur", 0)
+        val nama = intent.getStringExtra("nama")
+        val tglLahir = intent.getStringExtra("tglLahir")
+        val tglHariIni = intent.getStringExtra("tglHariIni")
 
         etKg = findViewById(R.id.et_kg)
         etCm1 = findViewById(R.id.et_cm1)
@@ -58,6 +61,10 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
                     intent.putExtra("hasil3", hasil3)
                     intent.putExtra("hasil4", hasil4)
                     intent.putExtra("umur", umur)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("jk", jk)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 }
             } else {
@@ -69,16 +76,188 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
 
     private fun getHasil(jk: String, umur: Int, berat: Double, tinggi: Double, lingkar: Double) {
         if (jk.equals("Laki-laki")) {
-            hasil1 = heightForAgeLakilaki(tinggi, umur)
-            hasil2 = weightForAge1Lakilaki(berat, umur)
-            hasil3 = weightForLengthLakilaki(tinggi, umur)
-            hasil4 = headCircumferenceForAgeLakilaki(lingkar, umur)
+            if (umur<=60) {
+                hasil1 = heightForAgeLakilaki(tinggi, umur)
+                hasil2 = weightForAge1Lakilaki(berat, umur)
+                hasil3 = weightForLengthLakilaki(tinggi, umur)
+                hasil4 = headCircumferenceForAgeLakilaki(lingkar, umur)
+            } else {
+                val imt = berat / (tinggi*tinggi*0.0001)
+                hasil1 = hasilIMTLakilaki(imt, umur)
+                hasil2 = headCircumferenceForAgeLakilaki(lingkar, umur)
+                hasil3 = ""
+                hasil4 = ""
+            }
         } else if (jk.equals("Perempuan")) {
-            hasil1 = heightForAgePerempuan(tinggi, umur)
-            hasil2 = weightForAge1Perempuan(berat, umur)
-            hasil3 = weightForLengthPerempuan(tinggi, umur)
-            hasil4 = headCircumferenceForAgePerempuan(lingkar, umur)
+            if (umur<=60) {
+                hasil1 = heightForAgePerempuan(tinggi, umur)
+                hasil2 = weightForAge1Perempuan(berat, umur)
+                hasil3 = weightForLengthPerempuan(tinggi, umur)
+                hasil4 = headCircumferenceForAgePerempuan(lingkar, umur)
+            } else {
+                val imt = berat / (tinggi*tinggi*0.0001)
+                hasil1 = hasilIMTPerempuan(imt, umur)
+                hasil2 = headCircumferenceForAgePerempuan(lingkar, umur)
+                hasil3 = ""
+                hasil4 = ""
+            }
         }
+    }
+
+    private fun hasilIMTPerempuan (imt: Double, umur: Int): String {
+        if (umur==61) {
+            if (imt<11.8) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<18.9) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==62) {
+            if (imt<11.8) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<18.9) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==63) {
+            if (imt<11.8) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<18.9) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==64) {
+            if (imt<11.8) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<18.9) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==65) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<19.0) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==66) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<19.0) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==67) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<16.9) return "gizi baik"
+            else if (imt<19.0) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==68) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<17.0) return "gizi baik"
+            else if (imt<19.1) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==69) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<17.0) return "gizi baik"
+            else if (imt<19.1) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==70) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<17.0) return "gizi baik"
+            else if (imt<19.1) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==71) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<17.0) return "gizi baik"
+            else if (imt<19.2) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==72) {
+            if (imt<11.7) return "gizi buruk"
+            else if (imt<12.7) return  "gizi kurang"
+            else if (imt<17.0) return "gizi baik"
+            else if (imt<19.2) return "gizi lebih"
+            else return "obesitas"
+        }
+
+        return ""
+    }
+
+    private fun hasilIMTLakilaki (imt: Double, umur: Int): String {
+        if (umur==61) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.6) return "gizi baik"
+            else if (imt<18.3) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==62) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.6) return "gizi baik"
+            else if (imt<18.3) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==63) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.3) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==64) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.3) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==65) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.3) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==66) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.4) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==67) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.4) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==68) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.4) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==69) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.4) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==70) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.5) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==71) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.7) return "gizi baik"
+            else if (imt<18.5) return "gizi lebih"
+            else return "obesitas"
+        } else if (umur==72) {
+            if (imt<12.1) return "gizi buruk"
+            else if (imt<13.0) return  "gizi kurang"
+            else if (imt<16.8) return "gizi baik"
+            else if (imt<18.5) return "gizi lebih"
+            else return "obesitas"
+        }
+
+        return ""
     }
 
     private fun heightForAgePerempuan(tinggi: Double, umur: Int): String {
@@ -3233,6 +3412,14 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
             } else {
                 return "sangat besar"
             }
+        } else if (umur<=72) {
+            if (lingkar<48) {
+                return "kecil"
+            } else if (lingkar<53) {
+                return "normal"
+            } else {
+                return "besar"
+            }
         }
 
         return ""
@@ -5700,7 +5887,7 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
                 return "sangat kecil"
             } else if (lingkar<31.9) {
                 return "kecil"
-            } else if (lingkar<37) {
+            } else if (lingkar<37.0) {
                 return "normal"
             } else if (lingkar<38.3) {
                 return "besar"
@@ -5988,7 +6175,7 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
                 return "sangat kecil"
             } else if (lingkar<45.5) {
                 return "kecil"
-            } else if (lingkar<51) {
+            } else if (lingkar<51.0) {
                 return "normal"
             } else if (lingkar<52.3) {
                 return "besar"
@@ -6034,7 +6221,7 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
         } else if (umur==28) {
             if (lingkar<44.6) {
                 return "sangat kecil"
-            } else if (lingkar<46) {
+            } else if (lingkar<46.0) {
                 return "kecil"
             } else if (lingkar<51.5) {
                 return "normal"
@@ -6252,7 +6439,7 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
                 return "sangat kecil"
             } else if (lingkar<47.2) {
                 return "kecil"
-            } else if (lingkar<53) {
+            } else if (lingkar<53.0) {
                 return "normal"
             } else if (lingkar<54.5) {
                 return "besar"
@@ -6426,6 +6613,14 @@ class CekPertumbuhanP2Activity : AppCompatActivity() {
                 return "besar"
             } else {
                 return "sangat besar"
+            }
+        } else if (umur<=72) {
+            if (lingkar<48) {
+                return "kecil"
+            } else if (lingkar<53) {
+                return "normal"
+            } else {
+                return "besar"
             }
         }
 

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:text="Untuk 18-24 bulan bulan"
+        android:text="Untuk 18-24 bulan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tesTDD5" />
 
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Apakah batu secara spontan memulai permainan dengan gerakan tubuh, seperti pok ame-ame atau cilukba?\n\nApakah anak Anda menunjuk dengan jari telunjuk bila ingin sesuatu, bukan dengan cara memegang dengan semua jari?\n"
+                android:text="Apakah bayi secara spontan memulai permainan dengan gerakan tubuh, seperti pok ame-ame atau cilukba?\n\nApakah anak Anda menunjuk dengan jari telunjuk bila ingin sesuatu, bukan dengan cara memegang dengan semua jari?\n"
                 android:textSize="20sp" />
 
             <RadioGroup

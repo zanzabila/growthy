@@ -28,6 +28,9 @@ class CekEmosionalGPPH : AppCompatActivity() {
         setContentView(R.layout.activity_cek_emosional_gpph)
 
         var umur = intent.getIntExtra("umur", 0)
+        val nama = intent.getStringExtra("nama")
+        val tglLahir = intent.getStringExtra("tglLahir")
+        val tglHariIni = intent.getStringExtra("tglHariIni")
         var hasilKMPE = intent.getStringExtra("hasilKMPE")
         radio01 = findViewById(R.id.radio_gpphQ1)
         radio02 = findViewById(R.id.radio_gpphQ2)
@@ -85,17 +88,23 @@ class CekEmosionalGPPH : AppCompatActivity() {
                     hasilGPPH = "kemungkinan gpph"
                 }
 
-                if (umur == 36) {
+                if (umur<42) {
                     var hasilMCHAT = intent.getStringExtra("hasilMCHAT")
                     val intent = Intent(this, HasilTesEmosional2Activity::class.java)
                     intent.putExtra("hasilMCHAT", hasilMCHAT)
                     intent.putExtra("hasilKMPE", hasilKMPE)
                     intent.putExtra("hasilGPPH", hasilGPPH)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 } else {
                     val intent = Intent(this, HasilTesEmosional3Activity::class.java)
                     intent.putExtra("hasilKMPE", hasilKMPE)
                     intent.putExtra("hasilGPPH", hasilGPPH)
+                    intent.putExtra("nama", nama)
+                    intent.putExtra("tglLahir", tglLahir)
+                    intent.putExtra("tglHariIni", tglHariIni)
                     startActivity(intent)
                 }
 

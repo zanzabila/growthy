@@ -29,7 +29,7 @@
                 android:id="@+id/tv_about1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tentang Kami"
+                android:text="Tentang Growthy"
                 android:textSize="34sp" />
 
             <Space
@@ -40,7 +40,7 @@
                 android:id="@+id/tv_about2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Growthy merupakan aplikasi yang ditujukan untuk memantau pertumbuhan, perkembangan, dan emosional anak. Aplikasi ini dikhususkan untuk anak sejak dilahirkan sampai berusia 72 bulan."
+                android:text="Growthy merupakan aplikasi yang ditujukan untuk memantau pertumbuhan, perkembangan, dan mental emosional anak. Aplikasi ini dikhususkan untuk anak sejak dilahirkan sampai berusia 72 bulan."
                 android:textSize="20sp" />
 
             <Space
@@ -62,7 +62,7 @@
                 android:id="@+id/tv_about4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dengan bimbingan\n・Wikky Fawwaz Al Maki"
+                android:text="Dengan bimbingan\n・Wikky Fawwaz Al Maki\n・Esa Risi Suazini"
                 android:textSize="16sp" />
 
             <Space

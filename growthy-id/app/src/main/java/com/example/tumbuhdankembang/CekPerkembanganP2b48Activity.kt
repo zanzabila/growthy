@@ -27,6 +27,9 @@ class CekPerkembanganP2b48Activity : AppCompatActivity() {
         setContentView(R.layout.activity_cek_perkembangan_p2b48)
 
         var umur = intent.getIntExtra("umur", 0)
+        val nama = intent.getStringExtra("nama")
+        val tglLahir = intent.getStringExtra("tglLahir")
+        val tglHariIni = intent.getStringExtra("tglHariIni")
         radio01 = findViewById(R.id.radio_kpsp12Q1)
         radio02 = findViewById(R.id.radio_kpsp12Q2)
         radio03 = findViewById(R.id.radio_kpsp12Q3)
@@ -52,6 +55,10 @@ class CekPerkembanganP2b48Activity : AppCompatActivity() {
                 radio09!!.checkedRadioButtonId > -1) {
 
                 tvEmptyAlert!!.text = ""
+                var kasar = 0
+                var halus = 0
+                var bicara = 0
+                var sosialisasi = 0
                 var count = 0
                 val selected01: RadioButton = findViewById(radio01!!.checkedRadioButtonId)
                 val selected02: RadioButton = findViewById(radio02!!.checkedRadioButtonId)
@@ -62,15 +69,15 @@ class CekPerkembanganP2b48Activity : AppCompatActivity() {
                 val selected07: RadioButton = findViewById(radio07!!.checkedRadioButtonId)
                 val selected08: RadioButton = findViewById(radio08!!.checkedRadioButtonId)
                 val selected09: RadioButton = findViewById(radio09!!.checkedRadioButtonId)
-                if (selected01.getText().toString().equals("Ya")) ++count
-                if (selected02.getText().toString().equals("Ya")) ++count
-                if (selected03.getText().toString().equals("Ya")) ++count
-                if (selected04.getText().toString().equals("Ya")) ++count
-                if (selected05.getText().toString().equals("Ya")) ++count
-                if (selected06.getText().toString().equals("Ya")) ++count
-                if (selected07.getText().toString().equals("Ya")) ++count
-                if (selected08.getText().toString().equals("Ya")) ++count
-                if (selected09.getText().toString().equals("Ya")) ++count
+                if (selected01.getText().toString().equals("Ya")) ++count else ++halus
+                if (selected02.getText().toString().equals("Ya")) ++count else ++halus
+                if (selected03.getText().toString().equals("Ya")) ++count else ++kasar
+                if (selected04.getText().toString().equals("Ya")) ++count else ++sosialisasi
+                if (selected05.getText().toString().equals("Ya")) ++count else ++sosialisasi
+                if (selected06.getText().toString().equals("Ya")) ++count else ++sosialisasi
+                if (selected07.getText().toString().equals("Ya")) ++count else ++bicara
+                if (selected08.getText().toString().equals("Ya")) ++count else ++kasar
+                if (selected09.getText().toString().equals("Ya")) ++count else ++kasar
 
                 var hasilKPSP: String
                 if (count >= 9) {
@@ -85,6 +92,13 @@ class CekPerkembanganP2b48Activity : AppCompatActivity() {
                 val intent = Intent(this, CekPerkembanganP3Bulan36::class.java)
                 intent.putExtra("umur", umur)
                 intent.putExtra("hasilKPSP", hasilKPSP)
+                intent.putExtra("kasar", kasar)
+                intent.putExtra("halus", halus)
+                intent.putExtra("bicara", bicara)
+                intent.putExtra("sosialisasi", sosialisasi)
+                intent.putExtra("nama", nama)
+                intent.putExtra("tglLahir", tglLahir)
+                intent.putExtra("tglHariIni", tglHariIni)
                 startActivity(intent)
 
             } else {

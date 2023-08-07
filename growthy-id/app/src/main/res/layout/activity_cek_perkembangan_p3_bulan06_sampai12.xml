@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:text="Untuk 6-12 bulan bulan"
+        android:text="Untuk 6-12 bulan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tesTDD3" />
 
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Pemeriksa duduk menghadap bayi yang dipangku orang tuanya, bunyikan bel di samping bahwa tanpa terlihat bayi, apakah bayi langsung menoleh ke samping bawah?\n\nApakah anak mengikuti perintah tanpa dibantu gerakan badan, seperti stop, berikan mainanmu?\n"
+                android:text="Pemeriksa duduk menghadap bayi yang dipangku orang tuanya, bunyikan bel di samping bawah tanpa terlihat bayi, apakah bayi langsung menoleh ke samping bawah?\n\nApakah anak mengikuti perintah tanpa dibantu gerakan badan, seperti stop, berikan mainanmu?\n"
                 android:textSize="20sp" />
 
             <RadioGroup
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Apakah bayi mengikuti perintah dengan dibantu gerakan badan seperti stop, berikan mainanmu?\n\nApakah batu secara spontan memulai permainan dengan gerakan tubuh, seperti pok ame-ame atau cilukba?\n"
+                android:text="Apakah bayi mengikuti perintah dengan dibantu gerakan badan seperti stop, berikan mainanmu?\n\nApakah bayi secara spontan memulai permainan dengan gerakan tubuh, seperti pok ame-ame atau cilukba?\n"
                 android:textSize="20sp" />
 
             <RadioGroup

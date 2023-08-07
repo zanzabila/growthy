@@ -387,7 +387,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Apakah anak Anda sering diperlakukan tidak menyenangkan oleh anak lain atau orang dewasa? (Seperti misalnya ditinggal bermain, dihindari, diejek, dikata katakan, direbut mainannya atau disakiti secara fisik)"
+                android:text="Apakah anak Anda sering diperlakukan tidak menyenangkan oleh anak lain atau orang dewasa? (Seperti misalnya ditinggal bermain, dihindari, diejek, dikata-katakan, direbut mainannya atau disakiti secara fisik)"
                 android:textSize="20sp" />
 
             <RadioGroup

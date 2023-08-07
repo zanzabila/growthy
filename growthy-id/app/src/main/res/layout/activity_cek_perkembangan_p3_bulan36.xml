@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Apakah anak dapat menyebutkan nama benda dan kegunaannya?\n\nContohnya cangkir untuk minum, bola untuk dilempar, pensil warna untuk menggambar, sendok untuk makan.\n\nApakah lebih dari tiga per empat orang mengerti apa yang dibicarakan anak Anda?\n"
+                android:text="Apakah anak dapat menyebutkan nama benda dan kegunaannya?\n\nContohnya cangkir untuk minum, bola untuk dilempar, pensil warna untuk menggambar, sendok untuk makan.\n\nApakah setidaknya lebih dari tiga perempat orang mengerti apa yang dibicarakan anak Anda?\n"
                 android:textSize="20sp" />
 
             <RadioGroup
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="4dp"
-                android:text="Apakah anak dapat menunjukkan minimal 2 nama benda di depannya sesuai fungsinya? (Misal untuk minum: cangkir, untuk dilempar: bola, untuk makan:sendok, untuk menggambar: pensil warna)\n"
+                android:text="Apakah anak dapat menunjukkan minimal 2 nama benda di depannya sesuai fungsinya? (Misal untuk minum: cangkir, untuk dilempar: bola, untuk makan: sendok, untuk menggambar: pensil warna)\n"
                 android:textSize="20sp" />
 
             <RadioGroup

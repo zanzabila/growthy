@@ -8,12 +8,14 @@
 
     <TextView
         android:id="@+id/tv_perkembangan"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:text="Perkembangan"
         android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1484,7 +1486,7 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="15dp"
-                        android:text="Menggambar segi emopt." />
+                        android:text="Menggambar segi empat." />
                 </TableRow>
 
                 <TableRow>
@@ -1638,7 +1640,7 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="15dp"
-                        android:text="Kemampuan berbahasa merupakan indikator seluruh perkembangan anak. Karena kemampuan berbahasa sensitif terhadap keterlambatan atau kerusakan pada sistem lainnya, sebab melibatkan kemampuan kognitif, motor, psikologis, emosi dan lingkungan sekitar anak. Kurangnya stimulasi akan dapat menyebabkan gangguan bicara dan berbahasa bahkan gangguan ini dapat menetap." />
+                        android:text="Kemampuan berbahasa merupakan indikator seluruh perkembangan anak. Kemampuan berbahasa sensitif terhadap keterlambatan atau kerusakan pada sistem lainnya, sebab melibatkan kemampuan kognitif, motor, psikologis, emosi dan lingkungan sekitar anak. Kurangnya stimulasi akan dapat menyebabkan gangguan bicara dan berbahasa bahkan gangguan ini dapat menetap." />
                 </TableRow>
 
                 <TableRow>
@@ -1707,7 +1709,7 @@
                         android:layout_width="wrap_content"
                         android:layout_column="2"
                         android:paddingEnd="15dp"
-                        android:text="Short stature atau Perawakan Pendek merupakan suatu terminologi mengenai tinggi badan yang berada di bawah persentil 3 atau -2 SD pada kurva pertumbuhan yang berlaku pada populasi tersebut. Penyebabnya dapat karena varisasi normal, gangguan gizi, kelainan kromosom, penyakit sistemik atau karena kelainan endokrin." />
+                        android:text="Short stature atau Perawakan Pendek merupakan suatu terminologi mengenai tinggi badan yang berada di bawah persentil -3 atau -2 SD pada kurva pertumbuhan yang berlaku pada populasi tersebut. Penyebabnya dapat karena varisasi normal, gangguan gizi, kelainan kromosom, penyakit sistemik atau karena kelainan endokrin." />
                 </TableRow>
 
                 <TableRow>

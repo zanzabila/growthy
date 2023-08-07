@@ -22,6 +22,9 @@ class CekPertumbuhanP1Activity : AppCompatActivity() {
     var radioJenis: RadioGroup? = null
     var tvEmptyAlertJenis: TextView? = null
     var tvLebih72: TextView? = null
+    var etNama: EditText? = null
+    var tvEmptyAlertNama: TextView? = null
+    val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.US)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +39,10 @@ class CekPertumbuhanP1Activity : AppCompatActivity() {
         radioJenis = findViewById(R.id.radio_jkPerkembangan)
         tvEmptyAlertJenis = findViewById(R.id.tv_emptyAlertJenisPertumbuhan)
         tvLebih72 = findViewById(R.id.tv_invalidUsiaPertumbuhan)
+        etNama = findViewById(R.id.et_namaPertumbuhan)
+        tvEmptyAlertNama = findViewById(R.id.tv_emptyAlertNamaPertumbuhan)
 
+        tvEmptyAlertNama!!.text = ""
         tvEmptyAlertUsia!!.text = ""
         tvEmptyAlertJenis!!.text = ""
         tvLebih72!!.text = ""
@@ -65,6 +71,12 @@ class CekPertumbuhanP1Activity : AppCompatActivity() {
             tvLebih72!!.text = ""
             var jk: String = ""
 
+            if (etNama!!.text.toString().length > 0) {
+                tvEmptyAlertNama!!.text = ""
+            }  else {
+                tvEmptyAlertNama!!.text = "Mohon lengkapi isian nama anak."
+            }
+
             if (etUsiaHamil.text.toString().length > 0){
                 tvEmptyAlertUsia!!.text = ""
             } else {
@@ -79,17 +91,30 @@ class CekPertumbuhanP1Activity : AppCompatActivity() {
                 tvEmptyAlertJenis!!.text = "Mohon pilih jenis kelamin anak."
             }
 
-            if (etUsiaHamil.text.toString().length > 0 && radioJenis!!.checkedRadioButtonId > -1) {
+            if (etUsiaHamil.text.toString().length > 0 &&
+                radioJenis!!.checkedRadioButtonId > -1 &&
+                etNama!!.text.toString().length > 0) {
                 if (!cal.after(today)) {
                     var umur = getUmur(etUsiaHamil.text.toString().toInt())
+                    var nama = (etNama!!.text.toString()).lowercase()
+                    nama = nama.split(" ").joinToString(" ") { it.replaceFirstChar {
+                        if (it.isLowerCase()) it.titlecase(
+                            Locale.getDefault()
+                        ) else it.toString()
+                    } }.trimEnd()
+                    val tglLahir = tvIsiTglLahir!!.text
+                    val tglHariIni = sdf.format(today.getTime())
 
                     if (umur<=72) {
                         val intent = Intent(this, CekPertumbuhanP2Activity::class.java)
                         intent.putExtra("jk", jk)
                         intent.putExtra("umur", umur)
+                        intent.putExtra("nama", nama)
+                        intent.putExtra("tglLahir", tglLahir)
+                        intent.putExtra("tglHariIni", tglHariIni)
                         startActivity(intent)
                     } else {
-                        tvLebih72!!.text = "Mohon maaf, tes pertumbuhan hanya dapat dilakukan untuk anak berumur 6 tahun ke bawah."
+                        tvLebih72!!.text = "Mohon maaf, tes pertumbuhan hanya dapat dilakukan untuk anak berumur 72 bulan ke bawah."
                     }
                 }
             }
@@ -106,12 +131,21 @@ class CekPertumbuhanP1Activity : AppCompatActivity() {
             c.add(Calendar.MONTH, 1)
             ++count
         }
-        if (count<0) return 0
+        if (count==0) return 0
+        if (count==73) {
+            c.add(Calendar.MONTH, -1)
+            var days = 0
+            while (c.before(today)) {
+                c.add(Calendar.DAY_OF_MONTH, 1)
+                ++days
+            }
+            if (days<30) return 72
+            else return 73
+        }
         return count-1
     }
 
     private fun updateDateInView() {
-        val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.US)
         tvIsiTglLahir!!.text = sdf.format(cal.getTime())
         if (cal.after(today)) {
             tvInvalidDate!!.text = "Mohon masukkan tanggal lahir yang valid."
